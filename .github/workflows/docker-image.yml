@@ -24,7 +24,7 @@ jobs:
       - name: Install nodejs dependencies
         run: npm ci
       - name: Test code
-        run: npm run test
+        run: npm run test src/
 
   test_frontend:
     runs-on: ubuntu-latest
