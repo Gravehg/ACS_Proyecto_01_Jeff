@@ -50,7 +50,9 @@ jobs:
       - name: Checkout backend code
         uses: actions/checkout@v4
       - name: Go to backend
-        run: cd Code/backend
+        run: | 
+             cd Code/backend
+             ls
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
