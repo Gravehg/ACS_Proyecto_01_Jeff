@@ -52,7 +52,7 @@ jobs:
     steps:
       - name: Go to backend
         run: |
-             cd backend
+             cd /backend
       - name: Checkout backend code
         uses: actions/checkout@v4
       - name: Use Node.js
@@ -68,7 +68,7 @@ jobs:
       - name: Go to frontend
         run: | 
             cd .. 
-            cd frontend
+            cd /frontend
       - name: Checkout frontend code
         uses: actions/checkout@v4
       - name: Use Node.js frontend
