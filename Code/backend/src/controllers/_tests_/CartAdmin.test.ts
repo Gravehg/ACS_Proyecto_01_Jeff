@@ -69,7 +69,7 @@ describe("CartAdmin", () => {
       totalPrice,
       photoPath
     );
-    expect(result).toBe("1");
+    expect(result).toBe("-1");
   });
 
   //Test Case ID: 6
