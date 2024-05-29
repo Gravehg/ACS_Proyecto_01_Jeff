@@ -44,7 +44,7 @@ jobs:
         run: npm ci
       - name: Test code
         run: npm run test
-test_acceptance:
+  test_acceptance:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -73,7 +73,7 @@ test_acceptance:
             sleep 5
           done
           echo 'Frontend server is up and running.'  
-dockerimage_frontend:
+  dockerimage_frontend:
     needs: [test_backend, test_frontend]
     runs-on: ubuntu-latest
     steps:
@@ -90,7 +90,6 @@ dockerimage_frontend:
           context: Code/frontend/
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/frontend-aseguramiento:latest
-        
   dockerimage_backend:
     needs: [test_backend, test_frontend]
     runs-on: ubuntu-latest
