@@ -46,9 +46,13 @@ jobs:
         run: npm run test
   test_acceptance:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
     steps:
       - name: Go to backend
         run: |
+             ls
              cd backend
       - name: Checkout backend code
         uses: actions/checkout@v4
