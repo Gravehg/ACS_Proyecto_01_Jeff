@@ -72,11 +72,8 @@ test_acceptance:
             echo 'Waiting for the frontend server...'
             sleep 5
           done
-          echo 'Frontend server is up and running.'
-      
-        
-          
-  dockerimage_frontend:
+          echo 'Frontend server is up and running.'  
+dockerimage_frontend:
     needs: [test_backend, test_frontend]
     runs-on: ubuntu-latest
     steps:
