@@ -85,7 +85,6 @@ jobs:
             sleep 5
           done
           echo 'Frontend server is up and running.'
-      - name: Run acceptance tests
       
         
           
