@@ -53,7 +53,6 @@ jobs:
       - name: Go to backend
         run: |
              ls
-             cd backend
       - name: Checkout backend code
         uses: actions/checkout@v4
       - name: Use Node.js
