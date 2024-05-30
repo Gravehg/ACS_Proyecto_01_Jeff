@@ -53,6 +53,7 @@ jobs:
         working-directory: Code/backend
         run: npm install
       - name: Build code
+        working-directory: Code/backend
         run: npm run build
       - name: Start backend server
         working-directory: Code/backend
